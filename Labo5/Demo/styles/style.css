@@ -6,3 +6,8 @@ h1, h2 {
 .styleYellow {
     color: yellow;
 }
+
+section h1 {
+    color: green;
+    font-size: 5em;
+}
