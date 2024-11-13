@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <style>
+        h1 {
+            color: darkcyan;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Example 1
+    Inline style element css is altijd hoger in graad dan style block en css. als je wilt dat het toch de css
+    toont moet je !important erachter plaatsen -->
+    <h1>Example 1</h1>
+
+<!--    Example 2   -->
+<header>
+    <h1>Example 2</h1>
+</header>
+
+<!--Example 3-->
+    <header class="hoofd">
+        <h1>Example 3</h1>
+    </header>
+</body>
+</html>
