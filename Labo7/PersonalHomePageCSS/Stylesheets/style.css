@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    margin: 2em;
+    margin-top: 2em;
     text-align: center;
 }
 
@@ -15,7 +15,6 @@ h1, h2 {
 
 .personal {
     display: flex;
-    border: 1px solid black;
     flex-direction: row;
     justify-content: space-around;
     vertical-align: top;
@@ -50,7 +49,6 @@ ol {
 
 .likes {
     display: flex;
-    border: 1px solid black;
     justify-content: space-around;
     margin-top: 4em;
 }
@@ -70,6 +68,10 @@ ol {
 
 .Lbox3 {
     order: 3;
+
+}
+#paragraaf {
+    text-align: center;
 }
 
 .bands {
@@ -81,21 +83,28 @@ ol {
     text-decoration: underline;
     font-weight: bold;
     margin-bottom: 0.2em;
+    text-align: center;
+}
+
+.amenra>img, .cult>img, .behemoth>img, .lorna>img, .architects>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .amenra {
     order:1;
-    width: 33%;
+    width: 30%;
 }
 
 .cult {
     order: 2;
-    width: 33%;
+    width: 30%;
 }
 
 .lorna {
     order: 3;
-    width: 33%;
+    width: 30%;
 }
 
 .behemoth {
@@ -111,5 +120,27 @@ ol {
 
 .prognose {
     color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prognose p {
+   text-decoration: underline;
+}
+#prognose {
+    width: 100%;
+    color: white;
+}
+
+#fop {
+    order: 1;
+ }
+
+#compnet {
+    order: 2;
+}
+
+#compsys {
+    order: 3;
 }
 
