@@ -3,6 +3,10 @@ body {
     font-family: "Bookman Old Style" , serif;
 }
 
+a, a:active {
+    text-decoration: none;
+    color: darkred;
+}
 header {
     margin-top: 2em;
     text-align: center;
