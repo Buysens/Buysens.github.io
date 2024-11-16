@@ -1,0 +1,36 @@
+.vrienden>header>h1 {
+    color: white;
+}
+
+.table {
+    border-collapse: collapse; /* Geeft aan of de tabel shared borders heeft of niet*/
+    text-align: left;
+    width: 100%;
+    font-family: "Bookman Old Style", Serif;
+    font-size: 1em;
+    background: white;
+    overflow: hidden; /* toont de tekst niet meer als het niet meer in de cel past */
+    border-radius: 2px; /* border radius van 2px omdat de border color niet meegaat over de afkromming */
+}
+
+.table td, .table th {
+    padding: 8px 2px;
+}
+.table thead th {
+    background-color:black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.table tbody td {
+    color: black;
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: normal;
+}
+.table tbody .alt td {
+    background: black;
+    color: white;
+}

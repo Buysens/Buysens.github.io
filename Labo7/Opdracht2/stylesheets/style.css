@@ -1,0 +1,152 @@
+body {
+    background-image: linear-gradient(white, black);
+    font-family: "Bookman Old Style" , serif;
+}
+
+a, a:active {
+    text-decoration: none;
+    color: darkred;
+}
+header {
+    margin-top: 2em;
+    text-align: center;
+}
+
+h1, h2 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.personal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    vertical-align: top;
+}
+
+.box1 {
+    order: 1;
+
+    }
+
+h2{
+    margin-top: 0;
+}
+
+.box2 {
+    order: 3;
+    width: 30%;
+}
+
+#mezelf {
+    max-height: 100%;
+    order: 2;
+}
+
+.personal>article {
+    display:inline-block;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+.likes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4em;
+}
+
+.Lbox1 {
+    order: 1;
+    width: 40%;
+}
+
+.Lbox2 {
+    order: 2;
+}
+
+.likes>img {
+    max-height: 100%;
+}
+
+.Lbox3 {
+    order: 3;
+
+}
+#paragraaf {
+    text-align: center;
+}
+
+.bands {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amenra>p, .cult>p, .behemoth>p, .lorna>p, .architects>p {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+
+.amenra>img, .cult>img, .behemoth>img, .lorna>img, .architects>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.amenra {
+    order:1;
+    width: 30%;
+}
+
+.cult {
+    order: 2;
+    width: 30%;
+}
+
+.lorna {
+    order: 3;
+    width: 30%;
+}
+
+.behemoth {
+    order: 4;
+    width: 50%;
+
+}
+
+.architects {
+    order: 5;
+    width: 50%;
+}
+
+.prognose {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prognose p {
+   text-decoration: underline;
+}
+#prognose {
+    width: 100%;
+    color: white;
+}
+
+#fop {
+    order: 1;
+ }
+
+#compnet {
+    order: 2;
+}
+
+#compsys {
+    order: 3;
+}
+
