@@ -16,14 +16,15 @@ body {
 #content {
     float: left;
     width: 70%;
-    margin-left: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
     box-sizing: border-box;
 }
 
 .box1 {
     float: right;
     width: 25%;
-    margin-right: 2.5em;
+    margin-right: 1.5em;
     box-sizing: border-box;
     background: url("../images/cocktail.gif") repeat-x;
 }
