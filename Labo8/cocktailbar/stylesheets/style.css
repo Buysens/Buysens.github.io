@@ -16,8 +16,7 @@ body {
 #content {
     float: left;
     width: 70%;
-    margin-left: 1em;
-    /*padding: 8px;*/
+    margin-left: 0.5em;
     box-sizing: border-box;
 }
 
