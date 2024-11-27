@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collapsing margin</title>
+    <style>
+        /* Box Styles */
+        /* wanneer block elementen margin hebben in horizontaal worden ze opgeteld maar verticaal nemen ze enkel de margin
+         van het element met de grootste margin. Als de margins verticaal dezelfde grote hebben worden er 1 van de
+         2 op 0 geplaatst */
+
+        .box {
+            width: 200px;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border: 2px solid #ddd;
+            background-color: #3498db;
+
+        }
+
+        /* Distinct Background Colors */
+        .box1 {
+            background-color: #3498db; /* Blue */
+            margin: 20px 20px 20px 20px; /* top right bottom left */
+        }
+
+        .box2 {
+            background-color: #2ecc71; /* Green */
+            margin: 30px 10px 20px;
+        }
+
+        .box3 {
+            background-color: #e74c3c; /* Red */
+            margin: 30px 10px
+        }
+
+    </style>
+</head>
+<body>
+<h1>Collapsing Margins Demo</h1>
+<span class="box box1">First Box</span> <!-- width en height geen enkel effect op inline elementen, margin-left en right worden
+  alleen toegepast, margin top en bottom worden niet toegepast -->
+
+<span class="box box2">Second Box</span>
+<span class="box box3">Third Box</span>
+<div class="box box1">First Box</div> <!-- block element houdt wel rekening met width en height -->
+<div class="box box2">Second Box</div>
+<div class="box box3">Third Box</div>
+</body>
+</html>
