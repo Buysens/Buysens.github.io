@@ -8,12 +8,12 @@
 
 <body>
 	<header id="top"> <!-- top -->
-		<p>AIRBUS - A380</p>
-		<p>Het grootste passagiersvliegtuig ter wereld </p>
+		<p id="titel1">AIRBUS - A380</p>
+		<p id="subtitel">Het grootste passagiersvliegtuig ter wereld </p>
 		<img src="images/tekklein.png" alt="tekening van vliegtuig" />
     </header>
 	
-    <section> <!-- news -->
+    <section class="news"> <!-- news -->
 		<h3>Eerste vlucht</h3>
 		<p>Het toestel maakte zijn eerste trans-Atlantische vlucht met passagiers op 19 maart 2007 tussen
 			 Frankfurt am Main en New York.
@@ -35,25 +35,23 @@
     </section>
 	
     <main> <!-- main -->
-	
-        <section> <!-- logo -->
-			<img src="images/airbus_logo.jpg" alt="Het logo van airbus" />
-        </section>
+			<section id="logo"> <!-- logo -->
+				<img src="images/airbus_logo.jpg" alt="Het logo van airbus" />
+			</section>
+			<article> <!-- introduction -->
+				<p><b>De Airbus A380</b> is het grootste passagiersvliegtuig ter wereld. Het is
+				   een product van het Europese concern Airbus. Het widebody-vliegtuig beschikt over twee
+				   verdiepingen, waardoor het maximaal 853 passagiers kan herbergen. Bij een gemiddelde configuratie
+				   passen er 555 personen in.
+				   De eerste testvlucht werd gemaakt op 27 april 2005. Tweeënhalf jaar later, op 25 oktober 2007,
+				   maakte de A380 haar eerste commerciële vlucht. In dienst van Singapore Airlines vloog de A380 van
+				   Singapore naar Sydney. <span>Dit was eveneens de eerste route waarop een lijndienst door het
+				   toestel werd onderhouden. </span> Anno april 2011 hebben vijf luchtvaartmaatschappijen 47
+				   vliegtuigen van dit type in dienst.
+				</p>
+			</article>
 		
-        <article> <!-- introduction -->
-			<p><b>De Airbus A380</b> is het grootste passagiersvliegtuig ter wereld. Het is
-			   een product van het Europese concern Airbus. Het widebody-vliegtuig beschikt over twee
-			   verdiepingen, waardoor het maximaal 853 passagiers kan herbergen. Bij een gemiddelde configuratie
-			   passen er 555 personen in.
-			   De eerste testvlucht werd gemaakt op 27 april 2005. Tweeënhalf jaar later, op 25 oktober 2007, 
-			   maakte de A380 haar eerste commerciële vlucht. In dienst van Singapore Airlines vloog de A380 van
-			   Singapore naar Sydney. <span>Dit was eveneens de eerste route waarop een lijndienst door het
-			   toestel werd onderhouden. </span> Anno april 2011 hebben vijf luchtvaartmaatschappijen 47
-			   vliegtuigen van dit type in dienst.
-			</p>
-		</article>
-		
-		<section> <!-- gallery -->
+		<section id="gallery"> <!-- gallery -->
 			<div class="foto">
 			  <img src="images/A380Grond.JPG" alt="Foto vliegtuig op de grond" />
 			</div>
@@ -84,9 +82,8 @@
 		</section>
 	</main>
 	
-    <div> <!-- bottom -->
-	
-		<div> <!-- block -->
+    <section id="bottom"> <!-- bottom -->
+		<section class="bottomBlock"> <!-- block -->
 			<ul>
 			  <li> Manchester </li>
 			  <li> Toulouse 
@@ -97,9 +94,9 @@
 				  </ul> </li>
 			   <li> Frankfurt am Main </li>
 			</ul>
-		</div>
+		</section>
 		
-		<div> <!-- block -->
+		<section class="bottomBlock"> <!-- block -->
 			<ul>
 			  <li> Documentary </li>
 			  <li> Aircrafts 
@@ -110,12 +107,12 @@
 				  </ul> </li>
 			   <li> A380 - 800 </li>
 			</ul>
-		</div>
-    </div>
+		</section>
+    </section>
 	
-	<div> <!-- copyright -->
+	<footer> <!-- copyright -->
 		<p>&lt; &copy; Airbus A380 &gt;</p>
-	</div>
+	</footer>
 	
 </body>
 </html>
