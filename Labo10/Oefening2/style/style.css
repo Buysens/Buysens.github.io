@@ -1,0 +1,47 @@
+body {
+    width: 95%;
+    margin: 0 auto;
+    padding:0;
+}
+
+.box1 {
+    background-color:white;
+    height: 200px;
+    border: 10px solid black;
+}
+
+.box3 {
+    border: 10px solid black;
+}
+
+@media screen and (max-width: 768px) {
+body {
+    width: 95%;
+    margin: 0 auto;
+    padding:0;
+}
+
+.box1 {
+    background-color:white;
+    height: 200px;
+    gap:5px;
+    border: 10px solid black;
+}
+}
+
+@media screen and (max-width: 992px) {
+body {
+    width: 95%;
+    margin: 0 auto;
+    padding:0;
+}
+    .box1 {
+    background-color:white;
+    height: 200px;
+    gap:5px;
+        border: 10px solid black;
+}
+   .box3 {
+       display: none;
+   }
+}

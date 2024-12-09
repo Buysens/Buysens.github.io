@@ -1,0 +1,211 @@
+/*je kan je opmaak opnieuw plaatsen in media screens maar dit is niet nodig omdat de opmaak over de
+verschillende pagina's hetzelfde moet zijn*/
+body {
+    width: 95%;
+    margin: 0 auto;
+    padding:0;
+}
+
+.box1 {
+    background-color:white;
+    height: 200px;
+    gap:5px;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+
+}
+
+.box2 {
+    height: 200px;
+    background-color: red;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+
+}
+
+.box3 {
+    background-color: blue;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+
+}
+
+.box4 {
+    background-color:white;
+    height: 200px;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.box5 {
+    background-color:white;
+    height: 200px;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.box6 {
+    background-color:red;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.box7 {
+    background-color:white;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.box8 {
+    background-color:blue;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.box9 {
+    background-color:white;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+/*@media screen and (min-width: 768px) {*/
+/*    body {*/
+/*        width: 95%;*/
+/*        margin: 0 auto;*/
+/*        padding:0;*/
+/*    }*/
+
+/*    .box1 {*/
+/*        background-color:white;*/
+/*        height: 200px;*/
+/*        gap:5px;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+
+/*    }*/
+
+/*    .box2 {*/
+/*        height: 200px;*/
+/*        background-color: red;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+
+/*    }*/
+
+/*    .box3 {*/
+/*        background-color: blue;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+
+/*    }*/
+
+/*    .box4 {*/
+/*        background-color:white;*/
+/*        height: 200px;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*    .box5 {*/
+/*        background-color:white;*/
+/*        height: 200px;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*    .box6 {*/
+/*        background-color:red;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*    .box7 {*/
+/*        background-color:white;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*    .box8 {*/
+/*        background-color:blue;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*    .box9 {*/
+/*        background-color:white;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*}*/
+
+/*@media screen and (min-width: 992px) {*/
+/*    body {*/
+/*        width: 95%;*/
+/*        margin: 0 auto;*/
+/*        padding:0;*/
+/*    }*/
+
+/*    .box1 {*/
+/*        background-color:white;*/
+/*        height: 200px;*/
+/*        gap:5px;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+
+/*    }*/
+
+/*    .box2 {*/
+/*        height: 200px;*/
+/*        background-color: red;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+
+/*    }*/
+
+/*    .box3 {*/
+/*        background-color: blue;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+
+/*    }*/
+
+/*    .box4 {*/
+/*        background-color:white;*/
+/*        height: 200px;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*    .box5 {*/
+/*        background-color:white;*/
+/*        height: 200px;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*    .box6 {*/
+/*        background-color:red;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*    .box7 {*/
+/*        background-color:white;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*    .box8 {*/
+/*        background-color:blue;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*    .box9 {*/
+/*        background-color:white;*/
+/*        border-right: 10px solid black;*/
+/*        border-bottom: 10px solid black;*/
+/*    }*/
+
+/*}*/
