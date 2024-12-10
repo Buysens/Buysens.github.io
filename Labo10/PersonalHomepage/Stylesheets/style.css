@@ -1,165 +1,182 @@
-@media screen and (min-width: 992px) {
-    body {
-        background-image: linear-gradient(white, black);
-        font-family: "Bookman Old Style", serif;
-    }
 
-    a, a:active {
-        text-decoration: none;
-        color: darkred;
-    }
+body {
+    background-image: linear-gradient(white, black);
+    font-family: "Bookman Old Style" , serif;
+}
 
-    header {
-        margin-top: 2em;
-        text-align: center;
-    }
+a, a:active {
+    text-decoration: none;
+    color: darkred;
+}
+header {
+    margin-top: 2em;
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+}
 
-    h1, h2 {
-        text-decoration: underline;
-        font-weight: bold;
-    }
+h1, h2 {
+    text-decoration: underline;
+    font-weight: bold;
+}
 
-    /*.personal {*/
-    /*    display: flex;*/
-    /*    flex-wrap: wrap;*/
-    /*    flex-direction: row;*/
-    /*    justify-content: space-around;*/
-    /*    vertical-align: top;*/
-    /*}*/
+.personal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    vertical-align: top;
+}
 
-    .box1 {
-        order: 1;
+.box1 {
+    order: 1;
+    width: 100%;
+    text-align: center;
 
-    }
+}
 
-    h2 {
-        margin-top: 0;
-    }
+h2{
+    margin-top: 0;
+}
 
-    .box2 {
-        order: 3;
-        width: 30%;
-    }
+.box2 {
+    order: 3;
+    width: 100%;
+    text-align: center;
 
-    #mezelf {
-        max-height: 100%;
-        order: 2;
-    }
+}
 
-    .personal > article {
-        display: inline-block;
-    }
+#mezelf {
+    max-height: 100%;
+    margin-bottom: 1em;
+    order: 2;
+}
 
-    ol {
-        list-style: upper-roman;
-    }
+.personal>article {
+    display:inline-block;
+}
 
-    .likes {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 4em;
-    }
+ol, li {
+    list-style: none;
+}
 
-    .Lbox1 {
-        order: 1;
-        width: 40%;
-    }
+.likes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+    text-align: center;
+}
 
-    .Lbox2 {
-        order: 2;
-    }
+.Lbox1 {
+    order: 1;
+    width: 100%;
+}
 
-    .likes > img {
-        max-height: 100%;
-    }
+.Lbox2 {
+    order: 2;
+    width: 100%;
 
-    .Lbox3 {
-        order: 3;
+}
 
-    }
+.likes>img {
+    max-height: 100%;
+}
 
-    #paragraaf {
-        text-align: center;
-    }
+.Lbox3 {
+    order: 3;
+    width: 100%;
 
-    .bands {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .amenra > p, .cult > p, .behemoth > p, .lorna > p, .architects > p {
-        text-decoration: underline;
-        font-weight: bold;
-        margin-bottom: 0.2em;
-        text-align: center;
-    }
+}
+#paragraaf {
+    text-align: center;
+}
 
-    .amenra > img, .cult > img, .behemoth > img, .lorna > img, .architects > img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.bands {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    .amenra {
-        order: 1;
-        width: 30%;
-    }
+.amenra>p, .cult>p, .behemoth>p, .lorna>p, .architects>p {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    text-align: center;
+    color: white;
+}
 
-    .cult {
-        order: 2;
-        width: 30%;
-    }
+.amenra>img, .cult>img, .behemoth>img, .lorna>img, .architects>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .lorna {
-        order: 3;
-        width: 30%;
-    }
+.amenra {
+    order:1;
+    width: 45%;
+}
 
-    .behemoth {
-        order: 4;
-        width: 50%;
+.cult {
+    order: 2;
+    width: 45%;
+}
 
-    }
+.lorna {
+    order: 3;
+    width: 50%;
+}
 
-    .architects {
-        order: 5;
-        width: 50%;
-    }
+.behemoth {
+    order: 4;
+    width: 50%;
 
-    .prognose {
-        color: white;
-        display: flex;
-        justify-content: space-around;
-    }
+}
 
-    .prognose p {
-        text-decoration: underline;
-    }
+.architects {
+    order: 5;
+    width: 50%;
+}
 
-    #prognose {
-        width: 100%;
-        color: white;
-    }
+.prognose {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
 
-    #fop {
-        order: 1;
-    }
+.prognose p {
+    text-decoration: underline;
+}
+#prognose {
+    width: 100%;
+    color: white;
+}
 
-    #compnet {
-        order: 2;
-    }
+#fop {
+    order: 1;
+    width: 100%;
 
-    #compsys {
-        order: 3;
-    }
+}
+
+#compnet {
+    order: 2;
+    width: 100%;
+
+}
+
+#compsys {
+    order: 3;
+    width: 100%;
+
 }
 
 @media screen and (min-width: 768px) {
     body {
         background-image: linear-gradient(white, black);
-        font-family: "Bookman Old Style", serif;
+        font-family: "Bookman Old Style" , serif;
     }
+
     a, a:active {
         text-decoration: none;
         color: darkred;
@@ -168,10 +185,15 @@
         margin-top: 2em;
         text-align: center;
     }
+    h1 {
+        font-size: 2em;
+    }
+
     h1, h2 {
         text-decoration: underline;
         font-weight: bold;
     }
+
     .personal {
         display: flex;
         flex-wrap: wrap;
@@ -179,91 +201,124 @@
         justify-content: space-around;
         vertical-align: top;
     }
+
     .box1 {
         order: 1;
-        width: 50%;
+        width: 100%;
+        text-align: center;
+
     }
-    h2 {
+
+    h2{
         margin-top: 0;
     }
+
     .box2 {
         order: 3;
-        width: 30%;
+        width: 100%;
+        text-align: center;
+
     }
+
     #mezelf {
         max-height: 100%;
+        margin-bottom: 2em;
         order: 2;
     }
-    .personal > article {
-        display: inline-block;
+
+    .personal>article {
+        display:inline-block;
     }
-    ol {
-        list-style: upper-roman;
+
+    ol, li {
+        list-style: none;
     }
+
     .likes {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-top: 4em;
+        margin-top: 1em;
+        text-align: center;
     }
+
     .Lbox1 {
         order: 1;
-        width: 40%;
+        width: 100%;
     }
+
     .Lbox2 {
         order: 2;
+        width: 100%;
+
     }
-    .likes > img {
+
+    .likes>img {
         max-height: 100%;
     }
+
     .Lbox3 {
         order: 3;
+        width: 100%;
+
 
     }
     #paragraaf {
         text-align: center;
+        font-size: 150%;
     }
+
     .bands {
         display: flex;
         flex-wrap: wrap;
     }
-    .amenra > p, .cult > p, .behemoth > p, .lorna > p, .architects > p {
+
+    .amenra>p, .cult>p, .behemoth>p, .lorna>p, .architects>p {
         text-decoration: underline;
         font-weight: bold;
         margin-bottom: 0.2em;
         text-align: center;
+        color: white;
     }
-    .amenra > img, .cult > img, .behemoth > img, .lorna > img, .architects > img {
+
+    .amenra>img, .cult>img, .behemoth>img, .lorna>img, .architects>img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+
     .amenra {
-        order: 1;
-        width: 30%;
+        order:1;
+        width: 100%;
     }
+
     .cult {
         order: 2;
-        width: 30%;
+        width: 100%;
     }
+
     .lorna {
         order: 3;
-        width: 30%;
+        width: 100%;
     }
+
     .behemoth {
         order: 4;
-        width: 50%;
+        width: 100%;
 
     }
+
     .architects {
         order: 5;
-        width: 50%;
+        width: 100%;
     }
+
     .prognose {
         color: white;
         display: flex;
         justify-content: space-around;
     }
+
     .prognose p {
         text-decoration: underline;
     }
@@ -271,15 +326,179 @@
         width: 100%;
         color: white;
     }
+
+    #fop {
+        order: 1;
+        width: 100%;
+
+    }
+
+    #compnet {
+        order: 2;
+        width: 100%;
+
+    }
+
+    #compsys {
+        order: 3;
+        width: 100%;
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(white, black);
+        font-family: "Bookman Old Style" , serif;
+    }
+
+    a, a:active {
+        text-decoration: none;
+        color: darkred;
+    }
+    header {
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    h1, h2 {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .personal {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        vertical-align: top;
+    }
+
+    .box1 {
+        order: 1;
+        width: 30%;
+    }
+
+    h2{
+        margin-top: 0;
+    }
+
+    .box2 {
+        order: 3;
+        width: 30%;
+    }
+
+    #mezelf {
+        max-height: 100%;
+        order: 2;
+    }
+
+    .personal>article {
+        display:inline-block;
+    }
+
+    ol {
+        list-style: upper-roman;
+    }
+
+    .likes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 4em;
+    }
+
+    .Lbox1 {
+        order: 1;
+        width: 40%;
+    }
+
+    .Lbox2 {
+        order: 2;
+    }
+
+    .likes>img {
+        max-height: 100%;
+    }
+
+    .Lbox3 {
+        order: 3;
+
+    }
+    #paragraaf {
+        text-align: center;
+    }
+
+    .bands {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .amenra>p, .cult>p, .behemoth>p, .lorna>p, .architects>p {
+        text-decoration: underline;
+        font-weight: bold;
+        margin-bottom: 0.2em;
+        text-align: center;
+    }
+
+    .amenra>img, .cult>img, .behemoth>img, .lorna>img, .architects>img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .amenra {
+        order:1;
+        width: 30%;
+    }
+
+    .cult {
+        order: 2;
+        width: 30%;
+    }
+
+    .lorna {
+        order: 3;
+        width: 30%;
+    }
+
+    .behemoth {
+        order: 4;
+        width: 50%;
+
+    }
+
+    .architects {
+        order: 5;
+        width: 50%;
+    }
+
+    .prognose {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .prognose p {
+        text-decoration: underline;
+    }
+    #prognose {
+        width: 100%;
+        color: white;
+    }
+
     #fop {
         order: 1;
     }
+
     #compnet {
         order: 2;
     }
+
     #compsys {
         order: 3;
     }
+
 }
 
 
