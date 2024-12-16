@@ -6,6 +6,8 @@
 }
 
 .container .block{
+    display: flex;
+    justify-content: center;
     padding:20px;
     color: white;
     font-size: 4em;

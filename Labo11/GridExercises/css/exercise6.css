@@ -4,9 +4,21 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
 }
+ header {
+     height: 50px;
+ font-size: 2em;
+ font-weight: bold;
+ padding: 10px 20px;
+ background-color: darkmagenta;
+ color: floralwhite;
+ }
 
 .block {
-    text-align: center;
+    font-size: 30px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 150px;
 }
 
