@@ -1,0 +1,9 @@
+.checklist {
+    list-style-image: url("../images/blank-checkmark-box.png");
+    list-style-position: inside;
+}
+
+.checked {
+    list-style-image: url("../images/checkmark-box.png");
+    list-style-position: inside;
+}
