@@ -1,0 +1,12 @@
+
+.metBollen {
+    list-style: disc;
+    background-color: black;
+    color: white;
+}
+
+ul.zonderBollen li{
+    list-style: none;
+    background-color: white; /* Voeg je gewenste achtergrondkleur hier in */
+    color: black;
+}
