@@ -7,8 +7,8 @@
     <title>Title</title>
 </head>
 <body>
-<table border = "1px">
-    <caption></caption>
+<section>
+<table>
     <thead>
     <tr><!-- table row-->
         <th>producten</th>
@@ -21,31 +21,34 @@
     <tbody>
     <tr>
         <td>product 1</td>
-        <td id="prijs1">10.00 Euro</td>
-        <td><input type="number" class="aantal" value="0"></td>
+        <td class="bedrag prijs">10.00 Euro</td>
+        <td><input type="number" class="aantal" value="0"/></td>
         <td class="txtBtw">6%</td>
-        <td></td>
+        <td class="subtotaal"></td>
     </tr>
     <tr>
         <td>product 2</td>
-        <td id="prijs2">15.00 Euro</td>
+        <td class="bedrag prijs">15.00 Euro</td>
         <td><input type="number" class="aantal" value="0"></td>
         <td class="txtBtw">21%</td>
-        <td></td>
+        <td class="subtotaal"></td>
     </tr>
     <tr>
         <td>product 3</td>
-        <td id="prijs3">12.20 Euro</td>
+        <td class="bedrag prijs">12.20 Euro</td>
         <td><input type="number" class="aantal" value="0"></td>
         <td class="txtBtw">21%</td>
-        <td></td>
+        <td class="subtotaal"></td>
     </tr>
     <tr>
         <td colspan="4">totaal</td>
-        <td></td>
+        <td id="totaal"></td>
     </tr>
     </tbody>
 </table>
+</section>
+    <button onclick="herbereken()">Herbereken</button>
+
 <script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
 </body>
 </html>
