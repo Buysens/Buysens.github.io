@@ -9,10 +9,62 @@
 <body>
 <script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
     <form>
-        <label>First Name:</label>
-        <input type="text" required placeholder="Your first name">
-        <label>Last Name:</label>
-        <input type="text" required placeholder="Your last name">
+        <fieldset>
+           <p>
+               <label>First Name &ast;:</label>
+               <input type="text" id="first" required placeholder="Your first name" tabindex="0">
+           </p>
+           <p>
+               <label>Last Name &ast;:</label>
+               <input type="text" required placeholder="Your last name">
+           </p>
+        </fieldset>
+
+        <fieldset>
+        <p> Wich sport do you train? </p>
+         <p><input type="checkbox" value="running">Running</p>
+         <p><input type="checkbox" value="Swimming">Swimming</p>
+         <p><input type="checkbox" value="Rowing">Rowing</p>
+        </fieldset>
+
+        <fieldset>
+            <p><input type="radio" name="gender" value="Male">Male</p>
+            <p><input type="radio" name="gender" value="Female">Female</p>
+            <p><input type="radio" name="gender" value="Other">Other / Prefer not to say</p>
+        </fieldset>
+
+        <fieldset>
+            <p>Favorite Movie: <input type="text"></p>
+            <p>Favorite Quote: <input type="text"></p>
+            <p>Favorite Food:
+                <select size="3">
+                    <option>Hamburger</option>
+                    <option>Hot Dog</option>
+                    <option>Pizza</option>
+                </select>
+            </p>
+            <p>Choose a flavor: <input type="text"></p>
+        </fieldset>
+
+        <fieldset>
+            <p>Password: <input required type="password"></p>
+            <p>Email address&ast;: <input type="text" required placeholder="Enter your email address"></p>
+            <p>Favorite Site: <input type="text" placeholder="Enter the URL of your favorite site"></p>
+        </fieldset>
+
+        <fieldset>
+            <p>Favorite Number (1-10): <input type="text"></p>
+            <p>Favorite Number (11-1000): <input type="range" min="11" max="1000"> </p>
+            <p>When were you born? <input type="date"></p>
+            <p>Belgian zip-code reg number &ast;: <input type="text" required placeholder="9999"></p>
+        </fieldset>
+
+        <fieldset>
+            <p>Search for something: <input type="search"></p>
+            <p>What is your favorite color? <input type="color"></p>
+            <p>Upload a file: <input type="file"></p>
+        </fieldset>
+        <input type="submit">
     </form>
 
 </body>
