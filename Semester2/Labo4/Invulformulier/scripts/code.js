@@ -1,6 +1,8 @@
 const setup = () => {
-    window.onload = function() {
-        document.querySelector(document.getElementById("first")).focus();
-    };
 }
+
+const email = () => {
+    let email = ""
+}
+
 window.addEventListener("load", setup);

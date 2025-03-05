@@ -8,7 +8,7 @@
 </head>
 <body>
 <script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
-    <form>
+    <form method=POST action="mailto:dario.buysens@student.vives.be" enctype="multipart/form-data">
         <fieldset>
            <p>
                <label>First Name &ast;:</label>
@@ -64,8 +64,8 @@
             <p>What is your favorite color? <input type="color"></p>
             <p>Upload a file: <input type="file"></p>
         </fieldset>
-        <input type="submit">
-    </form>
+        <input type="submit" onclick="mail()">
+    </>
 
 </body>
 </html>
