@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Formwaarden</title>
+</head>
+<body>
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+<form>
+    <fieldset>
+        <p>Is roker <input type="checkbox" id="roker"/>
+
+        <p class="inline"> Moedertaal
+        <p class="inline"><input type="radio" value="nl" name="taal"/>Nederlands</p>
+        <p class="inline"><input type="radio" value="fr" name="taal"/>Frans</p>
+        <p class="inline"> <input type="radio" value="en" name="taal"/>Engels</p>
+        <br/>
+        <label>Favoriete Buurland</label>
+            <select name="buurland">
+                <option value="Nederland">Nederland</option>
+                <option value="Frankrijk">Frankrijk</option>
+                <option value="Duitsland">Duitsland</option>
+            </select>
+        <br/>
+
+        <label> Bestelling</label>
+            <select multiple="multiple" size="6" name="bestelling">
+                <option value="Aardappelen">aardappelen</option>
+                <option value="Brood">brood</option>
+                <option value="Melk">melk</option>
+                <option value="Biefstuk">biefstuk</option>
+                <option value="Chips">chips</option>
+                <option value="Krant">krant</option>
+            </select>
+    </fieldset>
+    <input type="button" value="Toon Resultaat" id="btnValideer">
+</form>
+
+</body>
+</html>
