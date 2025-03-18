@@ -46,6 +46,8 @@ const validerenAchternaam = () => {
         let txtGeboortedatum = document.getElementById("txtGeboortedatum");
         let errorGeboortedatum = document.getElementById("errorGeboortedatum");
         let geboortedatum = txtGeboortedatum.value.trim();
+        let regexDatum = /^\d{4}-\d{2}-\d{2}$/;
+
 
         if (geboortedatum === "") {
             txtGeboortedatum.classList.add('ongeldig');
@@ -53,16 +55,10 @@ const validerenAchternaam = () => {
         } else if (geboortedatum[4] !== "-" || geboortedatum[7] !=="-") {
             txtGeboortedatum.classList.add('ongeldig');
             errorGeboortedatum.innerHTML = "Formaat is jjjj-mm-dd";
-        }
-
-        let jaar = geboortedatum.substring(0, geboortedatum.indexOf("-")).valueOf();
-        let jaartal = parseInt(jaar, 10);
-
-        if(Number.isInteger(jaartal) !== true) {
+        } else if(!regexDatum.test(txtGeboortedatum.value)) {
             txtGeboortedatum.classList.add('ongeldig');
-            errorGeboortedatum.innerHTML = "Het jaartal is geen getal";
+            errorGeboortedatum.innerHTML = "Formaat is jjjj-mm-dd";
         }
-
     }
 
     const validerenEmail = () => {
