@@ -55,6 +55,14 @@ const validerenAchternaam = () => {
             errorGeboortedatum.innerHTML = "Formaat is jjjj-mm-dd";
         }
 
+        let jaar = geboortedatum.substring(0, geboortedatum.indexOf("-")).valueOf();
+        let jaartal = parseInt(jaar, 10);
+
+        if(Number.isInteger(jaartal) !== true) {
+            txtGeboortedatum.classList.add('ongeldig');
+            errorGeboortedatum.innerHTML = "Het jaartal is geen getal";
+        }
+
     }
 
     const validerenEmail = () => {
