@@ -5,7 +5,9 @@ const setup = () => {
         sliders[i].addEventListener("change", update);
         sliders[i].addEventListener("input", update);
     }
-    let btnSave = document.getElementsByClassName("btnSave");
+
+    let btnSave = document.getElementById("btnSave");
+    btnSave.addEventListener("click", save);
     update();
 }
 
@@ -23,7 +25,24 @@ const update = () => {
 }
 
 const save = () => {
+
     let swatchKleur = document.getElementById("swatch");
+    let color = swatchKleur.style.backgroundColor;
+
+    let swatchSectie = document.createElement("section");
+    swatchSectie.classList.add("opgeslagenKleuren");
+    swatchSectie.style.background = color;
+
+    let btnDelete  = document.createElement("button");
+    btnDelete.innerHTML = "X";
+    btnDelete.classList.add("btnDelete");
+    btnDelete.onclick = () => {
+        swatchSectie.remove();
+    }
+
+    swatchSectie.appendChild(btnDelete);
+    let kleuren = document.getElementById("opgeslagenKleuren");
+    kleuren.appendChild(swatchSectie);
 
 }
 window.addEventListener("load", setup);
