@@ -5,6 +5,7 @@ const setup = () => {
         sliders[i].addEventListener("change", update);
         sliders[i].addEventListener("input", update);
     }
+    let btnSave = document.getElementsByClassName("btnSave");
     update();
 }
 
@@ -18,6 +19,11 @@ const update = () => {
 
     let swatch = document.getElementById("swatch");
     swatch.style.backgroundColor="rgb("+red+","+green+","+blue+")";
+
+}
+
+const save = () => {
+    let swatchKleur = document.getElementById("swatch");
 
 }
 window.addEventListener("load", setup);
