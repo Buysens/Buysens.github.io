@@ -1,0 +1,21 @@
+html, body {
+	margin:0px;
+}
+
+#speelveld {
+	position:relative;
+	border:solid 1px black;
+	box-sizing:border-box; /* anders krijgen we scrollbars omdat het element door de border net te groot wordt */
+	height: 800px;
+	width: 600px;
+}
+
+.sprite {
+	position:absolute;
+}
+
+.unselectable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
