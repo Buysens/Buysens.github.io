@@ -1,9 +1,10 @@
 #playField{
-
-    // aanvullen met hoogte en breedte
-}
-
-
-#target {
+    height: 800px;
+    width: 600px;
+    background-color: lightgrey;
     position: absolute;
 }
+
+/*#target {*/
+/*    position: relative;*/
+/*}*/
