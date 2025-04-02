@@ -6,7 +6,7 @@ const bewaarBewerktePersoon = () => {
     console.log("Klik op de knop bewaar");
 
     // valideer alle input data en controleer of er geen errors meer zijn
-    valideer();
+    // valideer();
 
     // indien ok, bewaar de ingegeven data.
         // een nieuw aangemaakte persoon voegen we toe
@@ -17,6 +17,15 @@ const bewaarBewerktePersoon = () => {
 
 // Event listener (btnNieuw click)
 const bewerkNieuwePersoon = () => {
+    let lstPersonen = document.getElementById("lstPersonen");
+
+    //Zorgt ervoor dat er niemand meer geselecteerd wordt in de lijst
+    lstPersonen.selectedIndex = -1;
+
+    let cleartxt = document.querySelectorAll('input[type = text]')
+    cleartxt.forEach((elem) => {
+        elem.value = ""
+    });
     console.log("Klik op de knop nieuw");
 
     // Zet de user interface klaar om de gegevens van een nieuwe persoon in te voeren
