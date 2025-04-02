@@ -68,6 +68,8 @@ const spelen = () => {
     afbeelding.addEventListener('click', () => {
         if(afbeelding.getAttribute('alt') === "bom" ){
             alert("Game over, je hebt op een bom geklikt. \nJe hebt een score van "+ global.score);
+            //dit is om de game te doen stoppen
+            clearTimeout(global.timeoutId);
         } else {
             global.score++;
             verplaatsenImg();

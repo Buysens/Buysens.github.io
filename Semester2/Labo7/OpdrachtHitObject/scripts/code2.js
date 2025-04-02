@@ -93,6 +93,7 @@ const hit = () => {
     // annuleer timer
     clearTimeout(global.timeoutId);
 
+
     global.score++;
     for (i = 0; i < scoreSpans.length; i++) {
         scoreSpans[i].innerText = global.score;
