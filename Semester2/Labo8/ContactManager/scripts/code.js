@@ -14,14 +14,16 @@ const bewaarBewerktePersoon = () => {
         // Haal waarden op uit de invoervelden
         let persoon = {};
         vulOp(persoon);
-
         if (selectedIndex === -1) {
             // Nieuw persoon toevoegen
             personen.push(persoon);
             let option = new Option(`${persoon.voornaam} ${persoon.familienaam}`, personen.length - 1);
             lstPersonen.add(option);
+
         } else {
+            persoon = persoon[selectedIndex];
             persoonbijwerken(persoon, selectedIndex);
+            invullenWaarden(persoon);
         }
 
         console.log("Persoon opgeslagen:", persoon);
@@ -31,6 +33,7 @@ const bewaarBewerktePersoon = () => {
     }
 };
 
+
 const persoonbijwerken = (persoon, selectedIndex) => {
     let lstPersonen = document.getElementById("lstPersonen");
     personen[selectedIndex] = persoon;
@@ -38,12 +41,24 @@ const persoonbijwerken = (persoon, selectedIndex) => {
 };
 
 const vulOp = (persoon) => {
-    persoon.voornaam = document.getElementById("txtVoornaam").value.trim();
-    persoon.familienaam = document.getElementById("txtFamilienaam").value.trim();
-    persoon.geboorteDatum = document.getElementById("txtGeboorteDatum").value.trim();
-    persoon.email = document.getElementById("txtEmail").value.trim();
-    persoon.aantalKinderen = document.getElementById("txtAantalKinderen").value.trim();
+    persoon.voornaam = document.getElementById("txtVoornaam").value;
+    persoon.familienaam = document.getElementById("txtFamilienaam").value;
+    persoon.geboorteDatum = document.getElementById("txtGeboorteDatum").value;
+    persoon.email = document.getElementById("txtEmail").value;
+    persoon.aantalKinderen = document.getElementById("txtAantalKinderen").value;
 };
+
+const invullenWaarden = () => {
+    let lstPersonen = document.getElementById("lstPersonen");
+    let selectedIndex = lstPersonen.selectedIndex;
+    let persoon = personen[selectedIndex];
+
+    document.getElementById("txtVoornaam").value = persoon.voornaam;
+    document.getElementById("txtFamilienaam").value = persoon.familienaam;
+    document.getElementById("txtGeboorteDatum").value = persoon.geboorteDatum;
+    document.getElementById("txtEmail").value = persoon.email;
+    document.getElementById("txtAantalKinderen").value = persoon.aantalKinderen;
+}
 
 const bewerkNieuwePersoon = () => {
     console.log("Klik op de knop nieuw");
@@ -56,6 +71,7 @@ const bewerkNieuwePersoon = () => {
 const setup = () => {
     document.getElementById("btnBewaar").addEventListener("click", bewaarBewerktePersoon);
     document.getElementById("btnNieuw").addEventListener("click", bewerkNieuwePersoon);
+    document.getElementById("lstPersonen").addEventListener("change", invullenWaarden)
 };
 
 window.addEventListener("load", setup);
