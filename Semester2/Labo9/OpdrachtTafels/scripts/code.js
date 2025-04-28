@@ -1,40 +1,68 @@
+let tafels = [];
+
 const setup = () => {
-    let btnGo = document.getElementById("btnGo");
-    btnGo.addEventListener("click", createTable)
-}
 
-const tafel = () => {
-    let getal = document.getElementById("tafel").value;
-    let tabelContainer = document.getElementById("tabelContainer");
-    let tafelDiv = document.createElement("div");
-
-    for (let i = 0; i <= 10; i++) {
-        let row = document.createElement("div");
-
-        if(i%2 == 0) {
-            row.setAttribute("class", "even");
-        }
-        row.appendChild(document.createTextNode(getal + " x " + i + " = " + getal*i));
-        tafelDiv.appendChild(row);
-    }
-    tabelContainer.appendChild(tafelDiv);
+    let btnGo=document.getElementById("btnGo");
+    btnGo.addEventListener("click", createTable);
 }
 
 const createTable = () => {
-    tafel();
-    createHeader();
-}
+    let txtStartGetal = document.getElementById("tafel");
+    let startGetal = parseInt(txtStartGetal.value);
+    if(isNaN(startGetal)) {
+        alert("Geen geldig getal");
+    } else {
+        let tafel = {
+            start: startGetal,
+            datum: new Date()
+        };
+        tafels.push(tafel);
+        showTafels();
+        txtStartGetal.value = "";
+    }
+};
+
+const showTafels = () => {
+    let tafelsDiv = document.getElementById("tafels");
+    verwijderAlleChildren(tafelsDiv);
+
+    for (let i = 0; i<tafels.length; i++) {
+        let tafel = tafels[i];
+        tafelsDiv.appendChild(createTafel(tafel));
+    }
+};
+
+const createTafel = (tafel) => {
+    let tafelDiv = document.createElement("div");
+
+    tafelDiv.appendChild(createHeader(tafel));
+    tafelDiv.setAttribute("class", "tafel");
+
+    for (let i = 1; i <= 10; i++) {
+        let row = document.createElement("div");
+
+        if (i%2 == 0) {
+            row.setAttribute("class", "even");
+        }
+        row.appendChild(document.createTextNode(tafel.start + " x " + i + " = " + tafel.start*i));
+        tafelDiv.appendChild(row);
+    }
+    return tafelDiv;
+};
 
 const createHeader = (tafel) => {
-    let getal = document.getElementById("tafel").value;
-    let date = new Date('2025-04-01T12:10:30');
     let headerDiv = document.createElement("div");
     headerDiv.setAttribute("class", "header");
 
-    let headerNode = document.createTextNode("Tafel van: "
-    + getal + " aangemaakt op: " + date.toISOString());
-    //toevoegen textnode aan header div met de inhoud van de header
+    let headerNode = document.createTextNode("Tafel van " + tafel.start + " aangemaakt op: " + tafel.datum.toTimeString().substring(0,8));
     headerDiv.appendChild(headerNode);
     return headerDiv;
-}
+};
+
+const verwijderAlleChildren = (element) => {
+    while(element.firstChild) {
+        element.removeChild(element.firstChild);
+    }
+};
+
 window.addEventListener("load", setup);

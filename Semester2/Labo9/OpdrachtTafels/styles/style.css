@@ -2,3 +2,19 @@
     background-color: darkgray;
     color: white;
 }
+
+.tafel {
+    width: 300px;
+    border: 1px solid black;
+    margin: 1em;
+}
+
+#tafels {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: black;
+    color: white;
+}
